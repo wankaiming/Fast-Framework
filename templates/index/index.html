@@ -1,0 +1,10 @@
+﻿<html>
+<head>
+<title>主页</title>
+</head>
+<body>
+<div>
+    <ul><{foreach item=div from=$newsList}><li><a href="/news/show/id/<{$div.id}>"><{$div.title}></a></li><{/foreach}></ul>
+</div>
+</body>
+</html>

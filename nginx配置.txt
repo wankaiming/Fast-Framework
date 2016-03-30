@@ -1,0 +1,33 @@
+	server { 
+		listen       80; 
+		server_name  demo.com www.demo.com; 
+		location / { 
+			root        D:/www/demo;
+			autoindex   on;
+			index       index.html index.htm index.php default.php; 
+			
+			###########################################隐藏index.php
+			if (!-e $request_filename) {
+
+					###一级目录下
+					rewrite ^/(.*)$ /index.php/$1 last;
+
+					###域名下的二级目录
+					#rewrite ^/目录名/(.*)$ /目录名/index.php/$1 last;
+			}   
+			
+		} 
+		
+		##########################################pathinfo 模式
+		location ~ \.php($|/) {
+			root           D:/www/demo; 
+			fastcgi_pass   127.0.0.1:9000; 
+			fastcgi_index  index.php; 
+				
+			fastcgi_split_path_info ^(.+\.php)(.*)$;     #增加这一句
+			fastcgi_param PATH_INFO $fastcgi_path_info;    #增加这一句
+
+			fastcgi_param  SCRIPT_FILENAME  D:/www/demo$fastcgi_script_name; 
+			include        D:/nginx-1.8.1/conf/fastcgi_params; 
+		} 
+	} 
