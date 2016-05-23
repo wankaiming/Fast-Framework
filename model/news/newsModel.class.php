@@ -1,1 +1,1 @@
-<?php//news modelclass newsModel extends Model{	public function getNewsDetail($id) {		$querySql = "select * from news where id=$id";		return $this->con->getRow($querySql);    }}?>
+<?php//news modelclass newsModel extends Model{    public function getNewsDetail($id) {        $querySql = "select * from news where id=$id";        return $this->con->getRow($querySql);    }}?>

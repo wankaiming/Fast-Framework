@@ -1,1 +1,1 @@
-<?php//login modelclass loginModel extends Model{	public function checkPwd($name,$pwd){		$querySql ='select * from user where name="'.$name.'" and pwd="'.$pwd.'"';		return $this->con->getRow($querySql);	}}?>
+<?php//login modelclass loginModel extends Model{    public function checkPwd($name,$pwd){        $querySql ='select * from user where name="'.$name.'" and pwd="'.$pwd.'"';        return $this->con->getRow($querySql);    }}?>

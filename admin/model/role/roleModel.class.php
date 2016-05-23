@@ -1,1 +1,1 @@
-<?php//role modelclass roleModel extends Model{	public function getAllowModule($fk_role_id){		$querySql ='select * from role where id='.$fk_role_id;		return $this->con->getRow($querySql);	}}?>
+<?php//role modelclass roleModel extends Model{    public function getAllowModule($fk_role_id){        $querySql ='select * from role where id='.$fk_role_id;        return $this->con->getRow($querySql);    }}?>

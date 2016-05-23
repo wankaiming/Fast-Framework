@@ -2,7 +2,7 @@
     //随机生成一个4位数的数字验证码
     $num="";
     for($i=0;$i<4;$i++){
-		$num .= rand(0,9);
+        $num .= rand(0,9);
     }
     //4位验证码也可以用rand(1000,9999)直接生成
     //将生成的验证码写入session，备验证页面使用
@@ -28,14 +28,14 @@
 
     //在画布上随机生成大量黑点，起干扰作用;
     for($i=0;$i<80;$i++){
-		imagesetpixel($im, rand(0,60), rand(0,20), $black);
+        imagesetpixel($im, rand(0,60), rand(0,20), $black);
     }
     //将四个数字随机显示在画布上,字符的水平间距和位置都按一定波动范围随机生成
     $strx=rand(3,8);
     for($i=0;$i<4;$i++){
-		$strpos=rand(1,6);
-		imagestring($im,5,$strx,$strpos, substr($num,$i,1), $black);
-		$strx+=rand(8,12);
+        $strpos=rand(1,6);
+        imagestring($im,5,$strx,$strpos, substr($num,$i,1), $black);
+        $strx+=rand(8,12);
     }
     ImagePNG($im);
     ImageDestroy($im);

@@ -1,70 +1,70 @@
 @charset "utf-8";
 
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li, form, label, legend,caption, tbody, tfoot, thead,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	color: #02558e;
-	font: 15px Arial;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #02558e;
+    font: 15px Arial;
 }
 input {
-	text-align: left;
+    text-align: left;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 select {
-	text-align: left;
-	height: 22px;
+    text-align: left;
+    height: 22px;
 }
 .datagrid {
-	margin: 0 auto;
-	padding: 6px 8px;
+    margin: 0 auto;
+    padding: 6px 8px;
 }
 .updatecon {
-	margin: 0 auto;
-	padding: 5px 0px 0px 0;
+    margin: 0 auto;
+    padding: 5px 0px 0px 0;
 }
 fieldset {
-	padding: 0;
-	margin: 0;
-	border: 1px #d4e2ee solid;
+    padding: 0;
+    margin: 0;
+    border: 1px #d4e2ee solid;
 }
 legend {
-	padding: 0 3px;
-	margin-left: 6px;
+    padding: 0 3px;
+    margin-left: 6px;
 }
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 a: hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 ul {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 #page {
-	font:12px/16px arial
+    font:12px/16px arial
 }
 #page a {
-	margin:0 3px;
-	border:1px solid #ddd;
-	padding:3px 7px;
-	text-decoration:none;
-	color:#666
+    margin:0 3px;
+    border:1px solid #ddd;
+    padding:3px 7px;
+    text-decoration:none;
+    color:#666
 }
 #page a.now_page,#page a:hover {
-	color:#fff;
-	background:#05c
+    color:#fff;
+    background:#05c
 }
 
 .button{
-	color:blue;
+    color:blue;
 }
 .datasource td{
-	text-align: center;
-	border:1px solid #aaa;
-	width:600px;
+    text-align: center;
+    border:1px solid #aaa;
+    width:600px;
 }
