@@ -1,5 +1,5 @@
 <?php 
-    require_once 'runtime.php';
+require_once 'runtime.php';
 $useTime = new runtime();
 $useTime->start();
 
